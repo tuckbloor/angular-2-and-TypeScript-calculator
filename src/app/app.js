@@ -15,7 +15,6 @@ var AppComponent = (function () {
         this.result = '';
         this.decimal = false;
         this.answer = 0;
-        this.operator = false;
         this.total = [];
         this.clear = false;
         this.previous_operator = false;
@@ -35,7 +34,6 @@ var AppComponent = (function () {
     };
     AppComponent.prototype.calculate = function (operator) {
         this.total.push(this.result);
-        this.operator = operator;
         this.result = '';
         if (this.total.length == 2) {
             var a = Number(this.total[0]);

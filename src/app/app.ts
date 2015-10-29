@@ -37,7 +37,6 @@ class AppComponent {
     value: any;
     decimal: boolean;
     answer: number;
-    operator: any;
     total: Array<number>;
     clear: boolean;
     previous_operator: any;
@@ -47,7 +46,6 @@ class AppComponent {
         this.result ='';
         this.decimal = false;
         this.answer = 0;
-        this.operator = false;
         this.total = [];
         this.clear = false;
         this.previous_operator = false;
@@ -77,7 +75,6 @@ class AppComponent {
     calculate(operator) {
 
         this.total.push(this.result);
-        this.operator = operator;
         this.result = '';
 
         if(this.total.length == 2) {
@@ -126,7 +123,7 @@ class AppComponent {
         if(isNaN(total)) {
             return false;
         }
-        
+
         this.result = total;
         this.total = [];
         this.clear = true;
