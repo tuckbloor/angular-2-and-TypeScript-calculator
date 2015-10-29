@@ -1,6 +1,6 @@
 # Angular 2 with TypeScript basic calculator
 
-##Desription
+##Description
 A Basic Calculator using Angular2 and TypeScript
 
 ##credits
