@@ -1,0 +1,18 @@
+<html>
+<head>
+    <title>Calculator</title>
+    <script src="../node_modules/systemjs/dist/system.src.js"></script>
+    <script src="../node_modules/angular2/bundles/angular2.dev.js"></script>
+    <link rel="stylesheet" href="../style.css">
+
+    <script>
+        System.config({
+            packages: {'app': {defaultExtension: 'js'}}
+        });
+        System.import('app/app');
+    </script>
+</head>
+<body>
+<my-app>loading...</my-app>
+</body>
+</html>
