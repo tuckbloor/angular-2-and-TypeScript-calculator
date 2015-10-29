@@ -79,6 +79,9 @@ var AppComponent = (function () {
         else {
             var total = a / b;
         }
+        if (isNaN(total)) {
+            return false;
+        }
         this.result = total;
         this.total = [];
         this.clear = true;

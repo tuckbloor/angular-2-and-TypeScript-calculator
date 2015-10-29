@@ -123,6 +123,10 @@ class AppComponent {
             var total = a / b;
         }
 
+        if(isNaN(total)) {
+            return false;
+        }
+        
         this.result = total;
         this.total = [];
         this.clear = true;
