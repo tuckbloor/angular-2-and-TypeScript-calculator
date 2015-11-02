@@ -31,16 +31,16 @@ import {Component, bootstrap} from 'angular2/angular2';
             </div>
     `
 })
+
 class AppComponent {
 
-    result: string;
+    result: number;
     value: any;
     decimal: boolean;
     answer: number;
     total: Array<number>;
     clear: boolean;
     previous_operator: any;
-
 
     constructor() {
         this.result ='';
